@@ -1,0 +1,127 @@
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<script src="scripts/Chart.min.js"></script>
+		<script type="module" src="scripts/common.js"></script>
+		<link rel="stylesheet" href="styles/styles.css">
+		<link rel="stylesheet" href="styles/index.css">
+		<link rel="stylesheet" href="styles/Chart.min.css">
+		<link type="image/x-icon" href="favicon.png" rel="shortcut icon">
+		<link type="Image/x-icon" href="favicon.png" rel="icon">
+		<title>Smart Calc v3.0 by ckendall - Math</title>
+	</head>
+	<body>
+		<button class="exit">❌</button>
+
+		<div class="container">
+			<p class="header">
+				Welcome to Super Mega Smart Calculator v3.0 Ultra Max S+
+			</p>
+
+			<div class="menu">
+				<ul>
+					<li>Math</li>
+					<li><a href="credit.html" target="_self">Credit</a></li>
+					<li><a href="deposit.html" target="_self">Deposit</a></li>
+				</ul>
+			</div>
+			<div class="calculator__container">
+
+				<button class="help" data-action="help">❔</button>
+				<div class="calculator">
+					<input type="text" name="s" class="calculator__display" id="displayInput" autofocus>
+					<div class="calculator__var">
+						<div class="calculator__label">
+							<label for="var_value">X value:</label>
+							<input type="text" name="s" id="var_value">
+						</div>
+						<div class="calculator__value" id="varResult">
+							Result:
+						</div>
+					</div>
+					<div class="calculator__graph">
+						<div class="calculator__label">
+							<label for="from">From:</label>
+							<input type="text" name="s" id="from">
+						</div>
+						<div class="calculator__label">
+							<label for="to">To:</label>
+							<input type="text" name="s" id="to">
+						</div>
+					</div>
+					<div class="calculator__keys">
+
+						<button class="key--operator" data-action="bracket_operator">sin</button>
+						<button class="key--operator" data-action="bracket_operator">asin</button>
+						<button class="key--operator" data-action="increment">+x</button>
+						<button class="key--operator" data-action="single_operator">+</button>
+						<button>7</button>
+						<button>8</button>
+						<button>9</button>
+
+						<button class="key--operator" data-action="bracket_operator">cos</button>
+						<button class="key--operator" data-action="bracket_operator">acos</button>
+						<button class="key--operator" data-action="decrement">-x</button>
+						<button class="key--operator" data-action="single_operator">-</button>
+						<button>4</button>
+						<button>5</button>
+						<button>6</button>
+
+						<button class="key--operator" data-action="bracket_operator">tan</button>
+						<button class="key--operator" data-action="bracket_operator">atan</button>
+						<button class="key--operator" data-action="single_operator">^</button>
+						<button class="key--operator" data-action="single_operator">*</button>
+						<button>1</button>
+						<button>2</button>
+						<button>3</button>
+
+						<button class="key--operator" data-action="bracket_operator">log</button>
+						<button class="key--operator" data-action="bracket_operator">ln</button>
+						<button class="key--operator" data-action="single_operator">mod</button>
+						<button class="key--operator" data-action="single_operator">/</button>
+						<button>0</button>
+						<button data-action="decimal">.</button>
+						<button data-action="var">x</button>
+
+						<button class="key--operator" data-action="bracket_operator">sqrt</button>
+						<button class="key--operator">E</button>
+						<button class="key--operator">(</button>
+						<button class="key--operator">)</button>
+
+						<button class="key--equal" data-action="clear">AC</button>
+						<button class="key--equal" data-action="graph">~</button>
+						<button class="key--equal" data-action="calculate">=</button>
+
+					</div>
+				</div>
+				<div class="history">
+					<div class="history_up">🔼</div>
+					<div class="history_down">🔽</div>
+					<div class="history_clear">✖️</div>
+				</div>
+
+			</div>
+
+			<div class="graph__container">
+				<canvas id="myChart"></canvas>
+			</div>
+
+			<div class="help_layer">
+				<div class="bubble bubble-bottom-right help_display">Enter expression</div>
+				<div class="bubble bubble-bottom-right help_functions"> You can use not only simple arithmetic operations, but also trigonometric functions. Everything for adults 😎</div>
+				<div class="bubble bubble-top-left help_calculate">Click <b>=</b> to get result</div>
+				<div class="bubble bubble-bottom-left help_var">You can insert a variable into an expression and after pressing <b>=</b> substitute values, the result will be immediately recalculated</div>
+				<div class="bubble bubble-top-right help_graph">Click <b>~</b> to build schedule, specifying a rage of X</div>
+				<div class="bubble bubble-bottom-left help_history">Request history</div>
+				<div class="bubble">You can change the background color, font size and color in the settings file in your home folder:</br><i>SmartCalcFiles/config.properties</i></div>
+			</div>
+
+		</div>
+		<div class="copyright">&#169; ckendall</div>
+
+		<script src="scripts/mathScripts.js"></script>
+		<script src="scripts/Chart.min.js"></script>
+
+	</body>
+</html>
+

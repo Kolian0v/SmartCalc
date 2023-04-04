@@ -1,0 +1,94 @@
+.form__container {
+    display: block;
+}
+
+.exit {
+    border: 0;
+    border-radius: 0;
+    background-color: transparent;
+    font-family: inherit;
+    font-weight: inherit;
+    outline: none;
+    appearance: none;
+    text-align: left;
+}
+
+.credit_form {
+    float: left;
+    box-shadow: 0 0 40px 0px rgba(0, 0, 0, 0.15);
+    width: 840px;
+    margin-left: 30px;
+    background-color: #eee;
+    padding: 20px;
+    font-size: 0.7em;
+}
+
+.form_div {
+    margin: 10px;
+}
+
+.radio {
+    margin-top: 30px;
+}
+
+.radio input {
+    margin-left: 50px;
+    margin-top: 15px;
+    accent-color: #222222;
+}
+
+.buttons {
+    margin-top: 30px;
+}
+
+.text_field {
+    background-color: #fff;
+    width:59%;
+    padding: 0.5em 0.5em;
+    position: relative;
+    border: 0;
+    font-size: inherit;
+    font-family: inherit;
+    font-weight: inherit;
+}
+
+.text_label {
+    display: inline-block;
+    width:40%;
+}
+
+.credit_clear {
+    padding: 0.75em 1.25em;
+    position: relative;
+    text-align: center;
+    font-size: inherit;
+    font-family: inherit;
+    font-weight: inherit;
+    background-image: linear-gradient(to bottom, #ff7033, #000000);
+    border: 0;
+    cursor: pointer;
+}
+
+.credit_submit {
+    padding: 0.75em 1.25em;
+    position: relative;
+    text-align: center;
+    font-size: inherit;
+    font-family: inherit;
+    font-weight: inherit;
+    background-image: linear-gradient(to bottom, #ff7033, #000000);
+    border: 0;
+    cursor: pointer;
+}
+
+.result {
+    margin-top: 50px;
+    padding: 0.5em 0.5em;
+    display: none;
+}
+
+.result_error {
+    margin-top: 50px;
+    padding: 0.5em 0.5em;
+    display: none;
+}

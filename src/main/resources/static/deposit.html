@@ -1,0 +1,132 @@
+<html>
+<head>
+	<meta charset="UTF-8">
+	<script type="module" src="scripts/common.js"></script>
+	<link rel="stylesheet" href="styles/styles.css">
+	<link rel="stylesheet" href="styles/deposit.css">
+	<link type="image/x-icon" href="favicon.png" rel="shortcut icon">
+	<link type="Image/x-icon" href="favicon.png" rel="icon">
+	<title>Smart Calc v3.0 by fbeatris - Credit</title>
+</head>
+<body>
+<button class="exit">❌</button>
+
+<div class="container">
+	<p class="header">
+		Welcome to Super Mega Smart Calculator v3.0 Ultra Max S+
+	</p>
+
+	<div class="menu">
+		<ul>
+			<li><a href="index.html" target="_self">Math</a></li>
+			<li><a href="credit.html" target="_self">Credit</a></li>
+			<li>Deposit</li>
+		</ul>
+	</div>
+	<div class="form__container">
+		<div class="credit_form">
+			<div>
+				<div class="form_div">
+					<label for="amount" class="text_label">Сумма вклада</label>
+					<input type="text" name="amount" id="amount" class="text_field" required>
+				</div>
+				<div class="form_div">
+					<label for="period" class="text_label">Срок размещения</label>
+					<input type="text" name="period" id="period" class="text_field" placeholder="в месяцах" required>
+				</div>
+				<div class="form_div">
+					<label for="percent" class="text_label">Процентная ставка</label>
+					<input type="text" name="percent" id="percent" class="text_field" placeholder="%" required>
+				</div>
+				<div class="form_div">
+					<label for="tax" class="text_label">Налоговая ставка</label>
+					<input type="text" name="tax" id="tax" class="text_field" placeholder="%" required>
+				</div>
+
+				<div class="form_div check">
+					<input type="checkbox" name="capitalisation" id="capitalisation">
+					<label for="capitalisation" class="text_label">Капитализация процентов</label>
+				</div>
+
+				<div class="form_div radio">
+					<p>Периодичность выплат</p>
+					<div>
+						<input type="radio" name="frequency" id="monthly" checked>
+						<label for="monthly" class="text_label">Раз в месяц</label>
+					</div>
+					<div>
+						<input type="radio" name="frequency" id="quarterly">
+						<label for="quarterly" class="text_label">Раз в квартал</label>
+					</div>
+					<div>
+						<input type="radio" name="frequency" id="yearly">
+						<label for="yearly" class="text_label">Раз в год</label>
+					</div>
+				</div>
+
+				<div class="fields_list">
+					<div class="form_div">
+						<p>Список пополнений</p>
+						<div>
+							<input type="text" id="deposit1" placeholder="Сумма">
+						</div>
+						<div>
+							<input type="text" id="deposit2" placeholder="Сумма">
+						</div>
+						<div>
+							<input type="text" id="deposit3" placeholder="Сумма">
+						</div>
+						<div>
+							<input type="text" id="deposit4" placeholder="Сумма">
+						</div>
+						<div>
+							<input type="text" id="deposit5" placeholder="Сумма">
+						</div>
+					</div>
+
+					<div class="form_div ">
+						<p>Частичные снятия</p>
+						<div>
+							<input type="text" id="withdrawal1" placeholder="Сумма">
+						</div>
+						<div>
+							<input type="text" id="withdrawal2" placeholder="Сумма">
+						</div>
+						<div>
+							<input type="text" id="withdrawal3" placeholder="Сумма">
+						</div>
+						<div>
+							<input type="text" id="withdrawal4" placeholder="Сумма">
+						</div>
+						<div>
+							<input type="text" id="withdrawal5" placeholder="Сумма">
+						</div>
+					</div>
+				</div>
+
+				<div class="form_div buttons">
+					<button class="deposit_clear">Очистить форму</button>
+					<button class="deposit_submit">Посчитать</button>
+				</div>
+
+			</div>
+
+			<div class="result">
+				<p>Начисленные проценты <b><span id="profit">1000</span></b></p>
+				<p>Сумма налога <b><span id="taxes">1000</span></b></p>
+				<p>Сумма на вкладе к концу срока <b><span id="total">1000</span></b></p>
+			</div>
+			<div class="result_error">
+				<p>Ошибка: <span id="errorText"></span></p>
+			</div>
+		</div>
+
+	</div>
+</div>
+<div class="copyright">&#169; fbeatris</div>
+
+<script src="scripts/depositScripts.js"></script>
+
+</body>
+</html>
+

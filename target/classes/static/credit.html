@@ -1,0 +1,73 @@
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<script type="module" src="scripts/common.js"></script>
+		<link rel="stylesheet" href="styles/styles.css">
+		<link rel="stylesheet" href="styles/credit.css">
+		<link type="image/x-icon" href="favicon.png" rel="shortcut icon">
+		<link type="Image/x-icon" href="favicon.png" rel="icon">
+		<title>Smart Calc v3.0 by fbeatris - Credit</title>
+	</head>
+	<body>
+		<button class="exit">❌</button>
+
+		<div class="container">
+			<p class="header">
+				Welcome to Super Mega Smart Calculator v3.0 Ultra Max S+
+			</p>
+
+			<div class="menu">
+				<ul>
+					<li><a href="index.html" target="_self">Math</a></li>
+					<li>Credit</li>
+					<li><a href="deposit.html" target="_self">Deposit</a></li>
+				</ul>
+			</div>
+			<div class="form__container">
+				<div class="credit_form">
+					<div>
+						<div class="form_div">
+							<label for="amount" class="text_label">Сумма кредита</label>
+							<input type="text" name="amount" id="amount" class="text_field" required>
+						</div>
+						<div class="form_div">
+							<label for="period" class="text_label">Срок кредита</label>
+							<input type="text" name="period" id="period" class="text_field" placeholder="в месяцах" required>
+						</div>
+						<div class="form_div">
+							<label for="percent" class="text_label">Процентная ставка</label>
+							<input type="text" name="percent" id="percent" class="text_field" placeholder="%" required>
+						</div>
+						<div class="form_div radio" id="radio">
+							<p>Типа платежа</p>
+							<input type="radio" name="type" id="type_annuity" checked>
+							<label for="type_annuity">Аннуитетный</label>
+							<input type="radio" name="type" id="type_differentiated">
+							<label for="type_differentiated">Дифференцированный</label>
+						</div>
+						<div class="form_div buttons">
+							<button class="credit_clear">Очистить форму</button>
+							<button class="credit_submit">Посчитать</button>
+						</div>
+
+					</div>
+
+					<div class="result">
+						<p>Ежемесячный платёж <b><span id="monthlyPayment"></span></b></p>
+						<p>Переплата по кредиту <b><span id="overPayment"></span></b></p>
+						<p>Общая выплата <b><span id="totalPayment"></span></b></p>
+					</div>
+					<div class="result_error">
+						<p>Ошибка: <span id="errorText"></span></p>
+					</div>
+				</div>
+
+			</div>
+		</div>
+		<div class="copyright">&#169; fbeatris</div>
+
+		<script src="scripts/creditScripts.js"></script>
+
+	</body>
+</html>
+
